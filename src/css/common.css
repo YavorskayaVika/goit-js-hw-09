@@ -16,3 +16,31 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+.timer {
+  margin-top: 15px;
+  max-width: 200px;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.field {
+  background-color: rgba(211, 211, 211, 0.35);
+}
+
+.value {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  border-bottom: 1px solid gray;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
