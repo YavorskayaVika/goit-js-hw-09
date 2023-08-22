@@ -12,13 +12,17 @@ const refs = {
 refs.startBtn.addEventListener('click', onStartBtnClick);
 refs.stopBtn.addEventListener('click', onStopBtnClick);
 
+refs.stopBtn.setAttribute('disabled', true);
+
 function onStartBtnClick() {
   id = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
   refs.startBtn.setAttribute('disabled', true);
+  refs.stopBtn.removeAttribute('disabled');
 }
 function onStopBtnClick() {
   clearInterval(id);
   refs.startBtn.removeAttribute('disabled');
+  refs.stopBtn.setAttribute('disabled', true);
 }
